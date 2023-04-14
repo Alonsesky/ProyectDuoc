@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    background-color: #ff9eb5;
+}
+
+.login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 15%;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+form .txt_field{
+    width: 100%;
+    position: relative;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+input[type="submit"]{
+    width: 50%;
+    height: 35px;
+    border: 1px solid;
+    margin-left: 25%;
+}
+
