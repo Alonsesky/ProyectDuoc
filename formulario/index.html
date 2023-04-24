@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-5">
+        <form onsubmit="verificarDatos()">
+          <h1>Formulario</h1>
+          <!--RUT-->
+          <div class="form-group">
+            <label for="rut">RUT: </label>
+            <input type="number" id="rut" oninput="veriRut()" onblur="borrarRut()" class="form-control"><br>
+            <p id="msj-rut"></p>
+          </div>
+          <!--NOMBRE-->
+          <div class="form-group">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" oninput="veriNom()" onblur="borrarNom()" class="form-control"><br>
+            <p id="msj-nom"></p>
+          </div>
+          <!--APELLIDO PATERNO-->
+          <div class="form-group">
+            <label for="appaterno">Apellido Paterno: </label>
+            <input type="text" id="appaterno" oninput="veriAppaterno()" onblur="borrarAppaterno()" class="form-control"><br>
+            <p id="msj-appaterno"></p>
+          </div>
+          <!--APELLIDO MATERNO-->
+          <div class="form-group">
+            <label for="apmaterno">Apellido Materno: </label>
+            <input type="text" id="apmaterno" oninput="veriApmaterno()" onblur="borrarApmaterno()" class="form-control"><br>
+          </div>
+          <p id="msj-apmaterno"></p>
+          <!--EDAD-->
+          <div class="form-group">
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad" oninput="veriEdad()" onblur="borrarEdad()" class="form-control"><br>
+            <p id="msj-edad"></p>
+          </div>
+          <!--GENERO-->
+          <div class="form-group">
+            <select class="form-select form-select-sm" id="genero" aria-label=".form-select-sm example">
+              <option selected>Selecione el genero</option>
+              <option value="1">Masculino</option>
+              <option value="2">Femenino</option>
+            </select>
+          </div><br>
+          <!--CELULAR-->
+          <div class="form-group">
+            <label for="celular">Celular: </label>
+            <input type="text" id="celular" name="celular" class="form-control"><br>
+          </div>
+          <input type="submit" value="Enviar"><br>
+        </form>
+          
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+
+</body>
+</html>
