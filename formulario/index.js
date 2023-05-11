@@ -95,3 +95,24 @@ function verificarDatos(){
     }
     
 }
+
+
+
+$('.btn-enviar').click(function () { 
+    var rut = document.getElementById('rut').value;
+    if (rut.length >= 9 && rut.length <= 10) {
+        document.getElementById('msj-rut').innerHTML = "Rut válido";
+    } else {
+        document.getElementById('msj-rut').innerHTML = "Rut inválido";
+    }
+});
+
+(document).ready(function () {
+    $('input').click(function(){
+        $('div').find('span').each(function(index){
+            $(this).text('nuevo text' + index)
+        })
+    })
+
+
+});

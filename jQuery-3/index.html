@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+</head>
+<body>
+    <header>
+    </header>
+    <!--FIN HEADER-->
+    <main>
+        <h1>Practica</h1>
+        <form action="formulario">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email">
+            <br>
+            <label for="tipo-solicitud">Escoger una opcion</label>
+            <select name="tipo-solicitud" id="tipo-solicitud">
+                <option value="1">Solicitud de Aprendizaje</option>
+                <option value="2">Solicitud de Trabajo</option>
+            </select><br>
+            <br>
+            <label for="mensaje">Escriba un mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <label for="avisos">Desea recibir avisos?</label>
+            <input type="checkbox" name="avisos" id="avisos">
+            <br>
+            <input type="reset" value="Limpiar">
+            <button type="button" id="btn-guardar">Guardar</button>
+        </form>
+    </main>
+    <!--FIN MAIN-->
+    <footer>
+    </footer>
+    <!--FIN FOOTER-->
+
+    <!--ENLACES-->
+    <!--jQuary-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
+    <!--JAVASCRIPT-->
+    <script src="index.js"></script>
+</body>
+</html>
